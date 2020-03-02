@@ -1,17 +1,15 @@
 ## links for the Introduction to DevOps Tools hands-on training course.
 
-### Chapters 1, 2 & 3
+### Chapters 1
 
-  * https://www.virtualbox.org/wiki/Downloads
-  * https://www.vagrantup.com/downloads.html
-  * https://aws.amazon.com/
+   * https://aws.amazon.com/
 
-### Chapter 4
+### Chapter 2
 
   * https://packer.io/intro/
   * https://github.com/dmccuk/packer_demo
 
-### Chapter 5
+### Chapter 3
 
   * https://www.terraform.io/intro/index.html
   * https://github.com/dmccuk/terraform_first.git
@@ -19,11 +17,14 @@
   * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
   * https://cloud-images.ubuntu.com/locator/ec2/ 
 
-### Chapter 6
+### Chapter 4
 
-  * https://github.com/dmccuk/terraform_modules.git
+  * https://github.com/dmccuk/terraform_hosting.git
+  
+**Don't forget to edit the SSH keys with unique update on page 34**
 
-If you see this message in the terraform output:
+
+Druning any builds, if you see this message in the terraform output:
 
 ````
 (remote-exec): E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
@@ -58,7 +59,7 @@ sudo apt install wget curl git python3-minimal -yq
 vagrant@devops-box:~/terraform_modules/stack$
 ````
 
-### Chapter 7 & 9
+### Chapter 5 & 7 (ansible chapters)
 
   * When you first connect to a server, you need to verify the host-key. when you run ansible for the first time, it will look like it's stuck, but just write "yes" in for each connection and it will work.
   * https://github.com/dmccuk/ansible_nginx
@@ -80,16 +81,16 @@ Template: (copy from https://github.com/dmccuk/ansible_nginx/blob/master/templat
   * Make sure you look at the bold text in the workbook. It highlights changes you need to make.
   * when i write webserver1_IP - I mean the IP address in your inventory.
 
-### Chapter 8 - Configure GitLab
+### Chapter 6 - Configure GitLab
 
   * https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab
 
-### Chapter 10 - Jenkins Server
+### Chapter 8 - Jenkins Server
 
   * **The Jenkins server is intentially left at Ubuntu Xenial (16.04) in the terraform code. This is due to the support matrix for this course but will be updated in a future release.**
   
 ````
-ami              =  "ami-0f630a3f40b1eb0b8"  #<-- Leave this version in place.
+ami              =  "ami-0d3993c594318ab77"  #<-- Leave this version in place.
 ````
 
   * More information: https://jenkins.io/
@@ -100,22 +101,22 @@ What is CI/CD:
 
 
   * I've seen the jenkins build fail before due to locking or network issues. Follow the resolution on page 59 if this happens.
-### Chapter 11 – GitLab and Jenkins Integration 
+### Chapter 9 – GitLab and Jenkins Integration 
 No links
 
-### Chapter 12 – ServerSpec Infrastructure Testing
+### Chapter 10 – ServerSpec Infrastructure Testing
 
   * https://github.com/dmccuk/spec-tests
 
-### Chapter 13 – Integrate ServersSpec with Jenkins
+### Chapter 11 – Integrate ServersSpec with Jenkins
 No links
 
-### Chapter 14 – Elastic Stack + Beats
+### Chapter 12 – Elastic Stack + Beats
 
   * **The ec2.med server is intentially left at Ubuntu Xenial (16.04) in the terraform code. This is due to the support matrix for this course but will be updated in a future release.**
   
 ````
-ami              =  "ami-0f630a3f40b1eb0b8"  #<-- Leave this version in place.
+ami              =  "ami-0d3993c594318ab77"  #<-- Leave this version in place.
 ````
 
   * https://www.elastic.co/products/
